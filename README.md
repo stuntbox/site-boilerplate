@@ -3,7 +3,8 @@ Basic Website Boilerplate
 
 A set of simple website starter files, using [Bourbon](http://bourbon.io)-flavored [Sass](http://sass-lang.com) and [Grunt](http://gruntjs.com). 
 
-# Checklist
+# Getting Started Checklist
+Copy this project to a new directory, and check the following items. Once you’re all set, go to your new project directory in the command line, type `grunt`, and hit enter. 
 
 ## HTML:
 - Update page `<title>`. 
