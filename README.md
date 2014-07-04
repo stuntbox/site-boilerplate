@@ -3,10 +3,10 @@ Basic Website Boilerplate
 
 A set of simple website starter files, using [Bourbon](http://bourbon.io)-flavored [Sass](http://sass-lang.com) and [Grunt](http://gruntjs.com). 
 
-# Getting Started Checklist
+## Getting Started Checklist
 Copy this project to a new directory, and check the following items. Once you’re all set, go to your new project directory in the command line, type `grunt`, and hit enter. 
 
-## HTML:
+### HTML:
 - Update page `<title>`. 
 - Update page description `<meta>`. 
 - Remove Respond.js proxy `<link>`s and script call if not serving CSS across domains (i.e. you’re not using a CDN). 
@@ -15,8 +15,8 @@ Copy this project to a new directory, and check the following items. Once you’
 - If using Google Analytics, update script call at bottom of page with tracking ID and uncomment.  
 - Double-check filepaths in `<script>` and `<link>` elements for absolute vs relative URLs. 
 
-## JavaScript:
+### JavaScript:
 - Update [Modernizr build](http://modernizr.com/download/) as needed. (Always create and switch to a custom build before deploying to production.) 
 
-## Images: 
+### Images: 
 - Update favicon, Apple touch icon, and Windows tile images as needed. 
