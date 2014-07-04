@@ -1,0 +1,22 @@
+{
+  "name": "site-boilerplate",
+  "description": "A basic website boilerplate.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stuntbox/site-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stuntbox/site-boilerplate.git/issues"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-notify": "*",
+    "grunt-svgmin": "*"
+  }
+}

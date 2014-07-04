@@ -1,0 +1,169 @@
+
+@import "bourbon/bourbon";
+@import "reset";
+@import "mixins";
+
+/*- Sass variables -----------------------------------------------------------*/
+
+$header-fonts: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-fonts: Georgia, Times, "Times New Roman", serif;
+$text-color: #333;
+$link-color: #f00;
+$bgd-color: #fff;
+
+/*- Global -------------------------------------------------------------------*/
+
+html {
+	font: 100%/1.25 $body-fonts; // set font size on html element so we can use rems
+}
+
+body {
+	color: $text-color;
+	background: $bgd-color;
+}
+
+.wrapper {
+	max-width: 75em; // 1200
+	margin: 0 auto;
+}
+
+a:link, a:visited {
+	color: $link-color;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+h1 {
+	font: 2.4em/1 $header-fonts;
+	font-weight: 700;
+}
+
+h2 {
+	font: 1.4em $header-fonts;
+	font-weight: 700;
+}
+
+p, li {
+	line-height: 1.5em; // 24/16
+	@include breakpoint(600) {
+		line-height: 1.65em; // 24/16
+	}
+	@include breakpoint(800) {
+		font-size: 1.125em; // 18/16
+	}
+	@include breakpoint(1200) { 
+		font-size: 1.25em; // 18/16
+	}
+}
+
+em, i {
+	font-style: italic;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+del, strike {
+	text-decoration: line-through;
+}
+
+cite {
+	font-style: italic;
+}
+
+ul, ol, dl {
+	 list-style-position: inside;
+}
+
+li {
+	padding-bottom: .5em;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+dd {
+	font-style: italic;
+	color: $text-color;
+	padding-bottom: 1em;
+}
+
+blockquote {
+	margin: 1em 0;
+	font-style: italic;
+	em, i, cite {
+		font-style: normal;
+	}
+}
+
+figure {
+	margin-bottom: 1em;
+}
+
+figcaption, .caption { 
+	color: lighten($text-color, 15%);
+	font-size: 0.875em; // 14/16
+	font-style: italic;
+}
+
+.caption {
+	margin-bottom: 1em;
+}
+
+input, textarea {
+	-webkit-appearance: none; // messes up checkboxes
+	-webkit-border-radius: 0; 
+	border-radius: 0;
+	padding: 0;
+}
+
+input[type="checkbox"] { 
+	-webkit-appearance: checkbox; // temp override of global rule
+}
+
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder { 
+	color: #666;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #666;
+}
+
+input:focus, 
+textarea:focus {
+	outline: none;
+}
+
+/*- Main Header --------------------------------------------------------------*/
+
+header[role="banner"] {
+
+}
+
+/*- Main Content -------------------------------------------------------------*/
+
+main {
+
+}
+
+/*- Main Footer --------------------------------------------------------------*/
+
+footer[role="contentinfo"] {
+
+}
+
+/*- Print --------------------------------------------------------------------*/
+
+// @media print {
+// 
+// }
