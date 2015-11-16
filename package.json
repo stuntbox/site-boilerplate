@@ -11,11 +11,14 @@
   },
   "devDependencies": {
     "grunt": "*",
-    "grunt-contrib-sass": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-jshint": "*",
+    "grunt-contrib-clean": "*",
     "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
     "grunt-notify": "*",
     "grunt-svgmin": "*"
   }

@@ -1,0 +1,166 @@
+@import "bourbon/bourbon";
+@import "reset";
+@import "mixins";
+@import "grid";
+
+/*- Sass variables -----------------------------------------------------------*/
+
+$image-assets: "../img";
+$cache-buster: random(1000000);
+$header-fonts: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-fonts: Georgia, Times, 'Times New Roman', serif;
+$highlight-color: #ff0000;
+$accent-color: #00ff00;
+$text-color: #333;
+$link-color: blue;
+$bgd-color: white;
+
+/*- Global -------------------------------------------------------------------*/
+
+html {
+	font: 100%/1.25 $body-fonts; // set font size on html element so we can use rems
+}
+
+body {
+	color: $text-color;
+	background: $bgd-color;
+}
+
+.wrapper {
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+a:link, a:visited {
+	color: $link-color;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-fonts;
+}
+
+h1 {
+	font-size: 2.4rem;
+	line-height: 1;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.4rem;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+p, li {
+	font-size: 1.0625em;
+	line-height: 1.5em; // 24/16
+	padding-bottom: 1em;
+	@include breakpoint(lg) {
+		line-height: 1.65em; // 24/16
+	}
+}
+
+em, i {
+	font-style: italic;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+del, strike {
+	text-decoration: line-through;
+}
+
+cite {
+	font-style: italic;
+}
+
+// ul, ol, dl {
+// 	 list-style-position: inside;
+// }
+
+li {
+	padding-bottom: .5em;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+dd {
+	font-style: italic;
+	color: $text-color;
+	padding-bottom: 1em;
+}
+
+blockquote {
+	margin: 1em 0;
+	font-style: italic;
+	em, i, cite {
+		font-style: normal;
+	}
+}
+
+figure {
+	margin-bottom: 1em;
+}
+
+figcaption, .caption {
+	color: lighten($text-color, 15%);
+	font-size: 0.875rem; // 14/16
+	font-style: italic;
+}
+
+.caption {
+	margin-bottom: 1em;
+}
+
+input, textarea {
+	-webkit-appearance: none; // messes up checkboxes
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: checkbox; // temp override of global rule
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #999;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #999;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+// override WebKit's iffy placeholder behavior
+// see: http://adactio.com/journal/6147/
+[placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/*- Main Content Styles ------------------------------------------------------*/
+
+
+/*- Print --------------------------------------------------------------------*/
+
+@media print {
+
+}

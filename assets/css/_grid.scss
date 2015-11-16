@@ -1,0 +1,6 @@
+/*- Grid Basics --------------------------------------------------------------*/
+
+$fg-column: 36px; // base column width, converted to % by Bourbon
+$fg-gutter: 6px; // base gutter width, converted to % by Bourbon
+$fg-max-columns: 23; // number of columns, used by Bourbon
+$max-width: 75em; // 1200/16;

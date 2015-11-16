@@ -1,2 +1,15 @@
 .DS_Store
-.sass-cache
+.sass-cache/
+*.swp
+logs
+*.log
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.grunt
+.lock-wscript
+build/Release
+node_modules
+npm-debug.log
